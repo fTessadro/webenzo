@@ -1,10 +1,10 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "The Importance of Good Health Coverage",
+    title: "Prostodoncia",
     description:
-      "Having solid health insurance is key to taking care of your health and your family's.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
+      "La prostodoncia permite restaurar tanto la función como la estética de tu sonrisa.",
+    image: "https://images.unsplash.com/photo-1644353740797-b85ffb378b3a?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "importance-of-health-coverage",
     date: "Oct 23, 2025",
     author: "SaludPlus Team",
@@ -16,10 +16,10 @@ export const blogPosts = [
   },
   {
     id: 2,
-    title: "Annual Medical Checkups: Why They Are Essential",
+    title: "Ortodoncia",
     description:
       "Preventive check-ups help detect illnesses early and improve quality of life.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1684607632829-1e5bf4f21dab?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "annual-checkups",
     date: "Oct 10, 2025",
     author: "Dr. Laura Fernández",
@@ -31,10 +31,10 @@ export const blogPosts = [
   },
   {
     id: 3,
-    title: "Mental Health: A Fundamental Pillar of Well-being",
+    title: "Implantes",
     description:
       "Caring for your mind is as important as caring for your body. Learn how to access the right support.",
-    image: "https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1609918438269-9a4c5f8fe3a4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "mental-health",
     date: "Oct 2, 2025",
     author: "SaludPlus Team",
@@ -46,10 +46,10 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Family Coverage: Supporting Every Stage of Life",
+    title: "Odonto pediatria",
     description:
-      "From childhood to adulthood, a good health plan grows with its members.",
-    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800",
+      "Es la rama de la odontología que se encarga de la salud bucal de niños y adolescentes.",
+    image: "https://plus.unsplash.com/premium_photo-1674368232044-31d75efc09fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "family-coverage",
     date: "Sep 30, 2025",
     author: "Lic. Marcos Rivas",
@@ -60,10 +60,10 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "Prevention Programs: Caring Before Curing",
+    title: "General",
     description:
-      "Prevention is the most effective tool for maintaining long-term health.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
+      "La odontología general es la base de una buena salud bucal.",
+    image: "https://plus.unsplash.com/premium_photo-1674179075499-19a58c8000ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxvZG9udG9sb2d5fGVufDB8fDB8fHww",
     slug: "prevention-programs",
     date: "Sep 25, 2025",
     author: "SaludPlus Team",
@@ -75,10 +75,10 @@ export const blogPosts = [
   },
   {
     id: 6,
-    title: "Telemedicine: Fast and Accessible Care",
+    title: "Protesis",
     description:
       "Online medical consultations, a key tool to bring healthcare closer to everyone.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
+    image: "https://images.unsplash.com/photo-1756388961620-5838b2299714?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "telemedicine",
     date: "Sep 20, 2025",
     author: "Dr. Natalia Gómez",

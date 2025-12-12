@@ -1,0 +1,128 @@
+---
+import headerImg1 from "../../assets/img/careHeader.jpg";
+// Importa las otras dos imágenes:
+// import headerImg2 from "../../assets/img/careHeader2.jpg";
+// import headerImg3 from "../../assets/img/careHeader3.jpg";
+---
+
+<header class="relative h-screen overflow-hidden">
+  <!-- Contenedor de imágenes -->
+  <div class="absolute inset-0">
+    <div
+      class="carousel-image absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000"
+      style="background-image: url('/img/careHeader.jpg')"
+      data-index="0"
+    ></div>
+    <div
+      class="carousel-image absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0"
+      style="background-image: url('/img/careHeader2.jpg')"
+      data-index="1"
+    ></div>
+    <div
+      class="carousel-image absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-1000 opacity-0"
+      style="background-image: url('/img/careHeader3.jpg')"
+      data-index="2"
+    ></div>
+  </div>
+
+  <!-- Contenido principal -->
+  <main
+    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
+  >
+    <h1 class="text-4xl md:text-6xl font-bold text-[#1A476A] mb-6">
+      Innova Dental Studio
+    </h1>
+    <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold drop-shadow-lg">
+      Un espacio diseñado para brindar atención odontológica integral, con especial enfoque en estética e implantología.
+    </p>
+    <a
+      href="https://calendar.app.google/5j86bRubTxcaVe2f6"
+      class="px-6 py-3 bg-[#1A476A] hover:bg-[#000000] text-white font-semibold rounded-3xl transition"
+    >
+      Agenda turno
+    </a>
+  </main>
+
+  <!-- Indicadores de navegación (puntos) -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
+    <button
+      class="carousel-dot w-3 h-3 rounded-full bg-white transition-all duration-300"
+      data-index="0"
+      aria-label="Ir a imagen 1"
+    ></button>
+    <button
+      class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300"
+      data-index="1"
+      aria-label="Ir a imagen 2"
+    ></button>
+    <button
+      class="carousel-dot w-3 h-3 rounded-full bg-white/50 transition-all duration-300"
+      data-index="2"
+      aria-label="Ir a imagen 3"
+    ></button>
+  </div>
+</header>
+
+<script>
+  let currentIndex = 0;
+  let autoSlideInterval: number;
+
+  const images = document.querySelectorAll('.carousel-image') as NodeListOf<HTMLElement>;
+  const dots = document.querySelectorAll('.carousel-dot') as NodeListOf<HTMLElement>;
+
+  function showSlide(index: number) {
+    // Ocultar todas las imágenes
+    images.forEach((img) => {
+      img.classList.remove('opacity-100');
+      img.classList.add('opacity-0');
+    });
+
+    // Mostrar la imagen actual
+    images[index].classList.remove('opacity-0');
+    images[index].classList.add('opacity-100');
+
+    // Actualizar puntos
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.remove('bg-white/50');
+        dot.classList.add('bg-white');
+      } else {
+        dot.classList.remove('bg-white');
+        dot.classList.add('bg-white/50');
+      }
+    });
+
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    const next = (currentIndex + 1) % images.length;
+    showSlide(next);
+  }
+
+  function startAutoSlide() {
+    autoSlideInterval = window.setInterval(nextSlide, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+  }
+
+  // Event listeners para los puntos
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      const index = parseInt(dot.getAttribute('data-index') || '0');
+      showSlide(index);
+      stopAutoSlide();
+      startAutoSlide(); // Reiniciar el auto-slide después del clic
+    });
+  });
+
+  // Iniciar el carrusel automático
+  startAutoSlide();
+
+  // Opcional: pausar cuando el mouse está sobre el header
+  const header = document.querySelector('header');
+  header?.addEventListener('mouseenter', stopAutoSlide);
+  header?.addEventListener('mouseleave', startAutoSlide);
+</script>

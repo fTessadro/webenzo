@@ -3,25 +3,25 @@ import headerImg from "../../assets/img/careHeader.jpg";
 ---
 
 <header
-  class="relative h-screen bg-cover bg-center"
-  style={{ backgroundImage: `url(${headerImg.src})` }}
+  class="relative h-screen bg-cover bg-center bg-no-repeat"
+   style="background-image: url('/img/careHeader.jpg')"
 >
-  <div class="absolute inset-0 bg-black/80"></div>
+<!-- style={`background-image: url(${headerImg.src})`} -->
+  <!-- <div class="absolute inset-0 bg-black/80"></div> -->
   <main
     class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
   >
-    <h1 class="text-4xl md:text-6xl font-bold text-green-700 mb-6">
-      Reliable Health Coverage
+    <h1 class="text-4xl md:text-6xl font-bold text-[#1A476A] mb-6">
+      Innova Dental Studio 
     </h1>
     <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold">
-      We provide guidance and solutions for health plans, taking care of your
-      health and well-being.
+      Un espacio diseñado para brindar atención odontológica integral, con especial enfoque en estética e implantología.
     </p>
     <a
       href="/contact"
-      class="px-6 py-3 bg-[#2F855A] hover:bg-green-800 text-white font-semibold rounded-3xl transition"
+      class="px-6 py-3 bg-[#1A476A] hover:bg-green-800 text-white font-semibold rounded-3xl transition"
     >
       Contact Us
-    </a>
+    </a>de
   </main>
 </header>
