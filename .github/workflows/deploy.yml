@@ -1,14 +1,21 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Desencadena el flujo de trabajo en cada push a la rama principal
+  # Desencadena el flujo de trabajo en cada push a la rama principal (main o master)
   push:
     branches:
-      - main # Si tu rama principal se llama 'master', usa 'master'
+      - main 
 
   # Permite ejecutar el flujo de trabajo manualmente
   workflow_dispatch:
 
+# AÑADE ESTA SECCIÓN DE PERMISOS
+permissions:
+  contents: read # Permite leer el código
+  pages: write   # Permite que la acción publique contenido en GitHub Pages
+  id-token: write # NECESARIO para deploy-pages@v4
+
+# Configura las propiedades de concurrencia para cancelar ejecuciones antiguas
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -27,12 +34,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build with Astro
-        # Ejecuta el script de build que genera la carpeta dist/
         run: npm run build 
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        # Sube el contenido de la carpeta 'dist/'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist 
