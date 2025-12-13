@@ -1,6 +1,6 @@
 ---
 //@ts-ignore
-const BASE_PATH = Astro.url.base;
+const BASE_PATH = Astro.url.base || '/webenzo/';
 ---
 
 <nav class="bg-[#F0F0F0] shadow-md fixed top-0 left-0 w-full z-50 mb-5">
@@ -40,7 +40,7 @@ const BASE_PATH = Astro.url.base;
       </li>
       <li>
         <a
-          href={`${BASE_PATH}blog`}"/blog"
+          href={`${BASE_PATH}blog`}
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1A476A]"
         >
           Tratamientos
