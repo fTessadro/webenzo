@@ -1,7 +1,4 @@
----
-//@ts-ignore
-const BASE_PATH = Astro.url.base || '/webenzo/';
----
+
 
 <nav class="bg-[#F0F0F0] shadow-md fixed top-0 left-0 w-full z-50 mb-5">
   <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
@@ -18,7 +15,7 @@ const BASE_PATH = Astro.url.base || '/webenzo/';
     <ul class="hidden md:flex space-x-8">
       <li>
         <a
-          href={BASE_PATH}
+          href="/"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1A476A]"
         >
           Inicio
@@ -29,7 +26,7 @@ const BASE_PATH = Astro.url.base || '/webenzo/';
       </li>
       <li>
         <a
-          href={`${BASE_PATH}nosotros`}
+          href="/nosotros"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1A476A]"
         >
           Nosotros
@@ -40,7 +37,7 @@ const BASE_PATH = Astro.url.base || '/webenzo/';
       </li>
       <li>
         <a
-          href={`${BASE_PATH}blog`}
+          href="/blog"
           class="relative group text-gray-700 font-bold transition-colors duration-300 hover:text-[#1A476A]"
         >
           Tratamientos
@@ -135,7 +132,7 @@ const BASE_PATH = Astro.url.base || '/webenzo/';
           </li>
           <li>
             <a
-              href={`${BASE_PATH}nosotros`}
+              href="/nosotros"
               class="text-gray-700 text-lg font-bold hover:text-[#1A476A]"
               >Nosotros</a
             >
