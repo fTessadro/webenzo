@@ -1,0 +1,106 @@
+---
+
+---
+
+<section id="donde-estamos" class="px-6 py-20 max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-[#1A476A] mb-8">
+        Dónde estamos
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Columna del mapa -->
+        <div class="w-full h-[350px] rounded-2xl overflow-hidden shadow-lg">
+            <iframe
+                width="100%"
+                height="100%"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.google.com/maps?q=-34.60106415061269,-58.391316315940664&hl=es&z=15&output=embed"
+            >
+            </iframe>
+        </div>
+
+        <!-- Columna de indicaciones -->
+        <div class="flex flex-col space-y-4">
+            <h3 class="text-2xl font-semibold text-[#1A476A]">Cómo llegar</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Nuestra clínica se encuentra ubicada en el corazón de la ciudad,
+                accesible desde múltiples puntos.
+            </p>
+
+            <div class="space-y-2">
+                <div class="flex items-start space-x-3">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#1A476A] flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        ></path>
+                    </svg>
+                    <span class="text-gray-600"
+                        ><strong>Dirección:</strong> Av. Lorem Ipsum 1234, CABA.</span
+                    >
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#1A476A] flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span class="text-gray-600"
+                        ><strong>Transporte público:</strong> Ceca de las líneas de
+                        subte A y B. Colectivos: 12, 60, 150.</span
+                    >
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 text-[#1A476A] flex-shrink-0"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                        ></path>
+                    </svg>
+                    <span class="text-gray-600"
+                        ><strong>Horarios:</strong> Lunes a Viernes de 9:00 a 18:00
+                        hs.</span
+                    >
+                </div>
+            </div>
+
+            <a
+                href="https://maps.google.com/maps?q=-34.60106415061269,-58.391316315940664"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block mt-4 bg-[#1A476A] text-white px-6 py-2 rounded-full font-semibold hover:bg-black transition-colors self-start"
+            >
+                Ver en Google Maps
+            </a>
+        </div>
+    </div>
+</section>

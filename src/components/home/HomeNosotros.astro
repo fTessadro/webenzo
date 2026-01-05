@@ -1,0 +1,18 @@
+---
+import WhatsAppButton from "../WhatsAppButton.astro";
+import EmployeeCard from "../nosotros/EmployeeCard.astro";
+import { employees } from "../../data/employeeData.js";
+---
+
+<section class="px-6 py-20 max-w-7xl mx-auto" id="nosotros">
+    <WhatsAppButton />
+    <h1
+        class="text-center text-[#1A476A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12"
+    >
+        Nuestro Equipo
+    </h1>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {employees.map((employee) => <EmployeeCard employee={employee} />)}
+    </div>
+</section>
