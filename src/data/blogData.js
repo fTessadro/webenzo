@@ -3,7 +3,7 @@ export const blogPosts = [
     id: 1,
     title: "Prostodoncia",
     description:
-      "La prostodoncia permite restaurar tanto la función como la estética de tu sonrisa.",
+      "En prostodoncia restauramos piezas dañadas o perdidas para que vuelvas a comer, hablar y sonreír con total seguridad. Tu sonrisa puede volver a ser completa… y natural.",
     image: "/webenzo/img/prostodoncia.jpeg",
     slug: "importance-of-health-coverage",
     date: "Oct 23, 2025",
@@ -18,7 +18,7 @@ export const blogPosts = [
     id: 2,
     title: "Ortodoncia",
     description:
-      "Preventive check-ups help detect illnesses early and improve quality of life.",
+      "Alineamos tu sonrisa para mejorar no solo tu estética, sino también tu salud bucal. Trabajamos con técnicas modernas y cómodas para lograr resultados visibles y duraderos.",
     image: "/webenzo/img/ortodoncia.jpeg",
     slug: "annual-checkups",
     date: "Oct 10, 2025",
@@ -33,7 +33,7 @@ export const blogPosts = [
     id: 3,
     title: "Implantes",
     description:
-      "Caring for your mind is as important as caring for your body. Learn how to access the right support.",
+      "Recuperá las piezas perdidas con implantes dentales seguros y duraderos. Volvé a masticar con firmeza y sonreír sin preocupaciones.",
     image: "https://images.unsplash.com/photo-1609918438269-9a4c5f8fe3a4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "mental-health",
     date: "Oct 2, 2025",
@@ -48,7 +48,7 @@ export const blogPosts = [
     id: 4,
     title: "Odonto pediatria",
     description:
-      "Es la rama de la odontología que se encarga de la salud bucal de niños y adolescentes.",
+      "Cuidamos la sonrisa de los más pequeños con paciencia, calidez y profesionalismo. Generamos experiencias positivas para que los niños crezcan sin miedo al dentista.",
     image: "https://plus.unsplash.com/premium_photo-1674368232044-31d75efc09fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "family-coverage",
     date: "Sep 30, 2025",
@@ -62,7 +62,7 @@ export const blogPosts = [
     id: 5,
     title: "General",
     description:
-      "La odontología general es la base de una buena salud bucal.",
+      "La base de una boca sana comienza con controles periódicos. Detectamos y tratamos a tiempo cualquier problema para que mantengas tu sonrisa saludable y fuerte.",
     image: "https://plus.unsplash.com/premium_photo-1674179075499-19a58c8000ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxvZG9udG9sb2d5fGVufDB8fDB8fHww",
     slug: "prevention-programs",
     date: "Sep 25, 2025",
@@ -77,7 +77,7 @@ export const blogPosts = [
     id: 6,
     title: "Endodoncia",
     description:
-      "Online medical consultations, a key tool to bring healthcare closer to everyone.",
+      "especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
     image: "/webenzo/img/endodoncia.jpeg",
     slug: "telemedicine",
     date: "Sep 20, 2025",
@@ -92,7 +92,7 @@ export const blogPosts = [
     id: 7,
     title: "Periodoncia",
     description:
-      "A balanced diet is key to maintaining physical and mental health.",
+      "La periodoncia se encarga de prevenir, diagnosticar y tratar enfermedades de las encías y del hueso que sostiene los dientes.",
     image: "/webenzo/img/periodoncia.jpeg",
     slug: "healthy-eating",
     date: "Sep 15, 2025",
@@ -107,7 +107,7 @@ export const blogPosts = [
     id: 8,
     title: "Cirugia",
     description:
-      "Empathy and close support are essential parts of good care.",
+      "se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
     image: "/webenzo/img/cirugia.jpeg",
     slug: "personalized-care",
     date: "Sep 10, 2025",
@@ -121,7 +121,7 @@ export const blogPosts = [
     id: 9,
     title: "ATM",
     description:
-      "Regular exercise helps prevent diseases and improve overall well-being.",
+      "Realizamos un diagnóstico preciso y tratamientos personalizados para aliviar el dolor, mejorar la función y devolverte calidad de vida.",
     image: "/webenzo/img/atm.jpeg",
     slug: "physical-activity",
     date: "Sep 5, 2025",
