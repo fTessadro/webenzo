@@ -4,7 +4,7 @@ export const blogPosts = [
     title: "Prostodoncia",
     description:
       "La prostodoncia permite restaurar tanto la función como la estética de tu sonrisa.",
-    image: "https://images.unsplash.com/photo-1644353740797-b85ffb378b3a?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/webenzo/img/prostodoncia.jpeg",
     slug: "importance-of-health-coverage",
     date: "Oct 23, 2025",
     author: "SaludPlus Team",
@@ -19,7 +19,7 @@ export const blogPosts = [
     title: "Ortodoncia",
     description:
       "Preventive check-ups help detect illnesses early and improve quality of life.",
-    image: "https://images.unsplash.com/photo-1684607632829-1e5bf4f21dab?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/webenzo/img/ortodoncia.jpeg",
     slug: "annual-checkups",
     date: "Oct 10, 2025",
     author: "Dr. Laura Fernández",
@@ -75,10 +75,10 @@ export const blogPosts = [
   },
   {
     id: 6,
-    title: "Protesis",
+    title: "Endodoncia",
     description:
       "Online medical consultations, a key tool to bring healthcare closer to everyone.",
-    image: "https://images.unsplash.com/photo-1756388961620-5838b2299714?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: "/webenzo/img/endodoncia.jpeg",
     slug: "telemedicine",
     date: "Sep 20, 2025",
     author: "Dr. Natalia Gómez",
@@ -90,10 +90,10 @@ export const blogPosts = [
   },
   {
     id: 7,
-    title: "Healthy Eating and Disease Prevention",
+    title: "Periodoncia",
     description:
       "A balanced diet is key to maintaining physical and mental health.",
-    image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800",
+    image: "/webenzo/img/periodoncia.jpeg",
     slug: "healthy-eating",
     date: "Sep 15, 2025",
     author: "Lic. Sofía Benítez",
@@ -105,10 +105,10 @@ export const blogPosts = [
   },
   {
     id: 8,
-    title: "Personalized Medical Care: The Value of Human Touch",
+    title: "Cirugia",
     description:
       "Empathy and close support are essential parts of good care.",
-    image: "https://images.unsplash.com/photo-1576765607924-b321a4a69a7a?q=80&w=800",
+    image: "/webenzo/img/cirugia.jpeg",
     slug: "personalized-care",
     date: "Sep 10, 2025",
     author: "SaludPlus Team",
@@ -119,10 +119,10 @@ export const blogPosts = [
   },
   {
     id: 9,
-    title: "Physical Activity: The Ideal Complement to Health",
+    title: "ATM",
     description:
       "Regular exercise helps prevent diseases and improve overall well-being.",
-    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07a?q=80&w=800",
+    image: "/webenzo/img/atm.jpeg",
     slug: "physical-activity",
     date: "Sep 5, 2025",
     author: "Dr. Ricardo Álvarez",

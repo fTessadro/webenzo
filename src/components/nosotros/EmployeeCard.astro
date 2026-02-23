@@ -3,22 +3,22 @@ const { employee } = Astro.props;
 ---
 
 <article
-    class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition flex flex-col h-full"
+    class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-2 flex flex-col h-full"
 >
     <div class="h-64 overflow-hidden">
         <img
             src={employee.image}
             alt={employee.name}
-            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
         />
     </div>
 
-    <div class="p-6 flex flex-col flex-grow">
-        <h3 class="text-xl font-bold text-[#1A476A] mb-1">
+    <div class="p-5 flex flex-col flex-grow">
+        <h3 class="text-lg font-bold text-[#1A476A] mb-1">
             {employee.name}
         </h3>
         <p
-            class="text-[#2F855A] font-semibold text-sm mb-3 uppercase tracking-wide"
+            class="text-[#2F855A] font-semibold text-sm mb-2 uppercase tracking-wide"
         >
             {employee.role}
         </p>

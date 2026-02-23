@@ -4,15 +4,18 @@ import BlogCard from "../blog/BlogCard.astro";
 import WhatsAppButton from "../WhatsAppButton.astro";
 ---
 
-<section class="px-6 py-20 max-w-7xl mx-auto" id="blog">
+<section
+    class="px-6 py-4 max-w-6xl mx-auto scroll-mt-20 min-h-[calc(100vh-5rem)] flex flex-col justify-center"
+    id="blog"
+>
     <WhatsAppButton />
     <h1
-        class="text-center text-[#1A476A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12"
+        class="text-center text-[#1A476A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-8"
     >
         Tratamientos
     </h1>
 
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.slice(0, -3).map((post) => <BlogCard post={post} />)}
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        {blogPosts.map((post) => <BlogCard post={post} />)}
     </div>
 </section>

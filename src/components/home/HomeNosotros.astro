@@ -4,7 +4,10 @@ import EmployeeCard from "../nosotros/EmployeeCard.astro";
 import { employees } from "../../data/employeeData.js";
 ---
 
-<section class="px-6 py-20 max-w-7xl mx-auto" id="nosotros">
+<section
+    class="px-6 py-10 max-w-6xl mx-auto scroll-mt-20 min-h-[calc(100vh-5rem)] flex flex-col justify-center"
+    id="nosotros"
+>
     <WhatsAppButton />
     <h1
         class="text-center text-[#1A476A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12"
@@ -12,7 +15,7 @@ import { employees } from "../../data/employeeData.js";
         Nuestro Equipo
     </h1>
 
-    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {employees.map((employee) => <EmployeeCard employee={employee} />)}
     </div>
 </section>
