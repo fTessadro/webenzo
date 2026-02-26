@@ -46,9 +46,9 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Odonto pediatria",
+    title: "Odontopediatria",
     description:
-      "Cuidamos la sonrisa de los más pequeños con paciencia, calidez y profesionalismo. Generamos experiencias positivas para que los niños crezcan sin miedo al dentista.",
+      "Cuidamos la sonrisa de los más pequeños con paciencia, calidez y profesionalismo. Generamos experiencias positivas para que los niños crezcan sin miedo al odontologo.",
     image: "https://plus.unsplash.com/premium_photo-1674368232044-31d75efc09fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     slug: "family-coverage",
     date: "Sep 30, 2025",
@@ -60,10 +60,10 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "General",
+    title: "Armonizacion orofacial",
     description:
-      "La base de una boca sana comienza con controles periódicos. Detectamos y tratamos a tiempo cualquier problema para que mantengas tu sonrisa saludable y fuerte.",
-    image: "https://plus.unsplash.com/premium_photo-1674179075499-19a58c8000ec?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTY5fHxvZG9udG9sb2d5fGVufDB8fDB8fHww",
+      "La armonización orofacial es una especialidad que busca equilibrar y realzar la belleza del rostro respetando la anatomía, proporciones y expresión natural de cada paciente. A través de procedimientos mínimamente invasivos, trabajamos sobre labios, mentón, pómulos, perfil mandibular y tercio inferior facial para lograr resultados sutiles, armónicos y personalizados.",
+    image: "/webenzo/img/armonizacionfacial.jpg",
     slug: "prevention-programs",
     date: "Sep 25, 2025",
     author: "SaludPlus Team",
@@ -77,7 +77,7 @@ export const blogPosts = [
     id: 6,
     title: "Endodoncia",
     description:
-      "especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
+      "Especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
     image: "/webenzo/img/endodoncia.jpeg",
     slug: "telemedicine",
     date: "Sep 20, 2025",
@@ -107,7 +107,7 @@ export const blogPosts = [
     id: 8,
     title: "Cirugia",
     description:
-      "se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
+      "Se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
     image: "/webenzo/img/cirugia.jpeg",
     slug: "personalized-care",
     date: "Sep 10, 2025",
@@ -122,7 +122,7 @@ export const blogPosts = [
     title: "ATM",
     description:
       "Realizamos un diagnóstico preciso y tratamientos personalizados para aliviar el dolor, mejorar la función y devolverte calidad de vida.",
-    image: "/webenzo/img/atm.jpeg",
+    image: "/webenzo/img/atm.jpg",
     slug: "physical-activity",
     date: "Sep 5, 2025",
     author: "Dr. Ricardo Álvarez",
