@@ -136,7 +136,7 @@
           </label>
         </div>
 
-        <ul class="flex flex-col space-y-6 mt-4 ml-6">
+        <ul id="mobile-menu-list" class="flex flex-col space-y-6 mt-4 ml-6">
           <li>
             <a
               href={`${import.meta.env.BASE_URL}#inicio`}
@@ -170,3 +170,19 @@
     </div>
   </div>
 </nav>
+
+<script>
+  const menuToggle = document.getElementById(
+    "menu-toggle",
+  ) as HTMLInputElement | null;
+  const mobileMenuList = document.getElementById("mobile-menu-list");
+
+  if (menuToggle && mobileMenuList) {
+    const links = mobileMenuList.querySelectorAll("a");
+    links.forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.checked = false;
+      });
+    });
+  }
+</script>

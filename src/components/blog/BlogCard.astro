@@ -3,28 +3,56 @@ const { post } = Astro.props;
 ---
 
 <article
-  class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-2"
+  class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 flex flex-col group"
 >
-  <div class="block">
-    <img
-      src={post.image}
-      alt={post.title}
-      class="w-full h-56 object-cover object-center"
-    />
+  <!-- Image Section -->
+  <div class="relative h-56 w-full">
+    <img src={post.image} alt={post.title} class="w-full h-full object-cover" />
+    <div
+      class="absolute inset-0 bg-gradient-to-t from-gray-900/90 via-gray-900/30 to-transparent"
+    >
+    </div>
+    <h2
+      class="absolute bottom-4 left-5 text-white text-xl font-bold tracking-wide"
+    >
+      {post.title}
+    </h2>
   </div>
 
-  <div class="p-5 flex flex-col justify-between h-full">
-    <div>
-      <h2 class="text-lg font-bold text-[#1A476A] mb-2">
-        <span>
-          {post.title}
-        </span>
-      </h2>
-      <p class="text-gray-600 text-sm mb-3">{post.description}</p>
-    </div>
+  <!-- Content Section -->
+  <div class="p-5 flex flex-col bg-white">
+    <p class="text-[#03A6A6] font-semibold text-sm mb-4">{post.subtitle}</p>
 
-    <span class="text-[#2F855A] font-semibold hover:text-[#18643e] transition">
-      More →
-    </span>
+    <button
+      type="button"
+      class="text-[#1A476A] font-semibold text-sm flex items-center hover:opacity-80 transition-opacity w-max focus:outline-none xl:cursor-pointer description-toggle"
+    >
+      <span class="toggle-text">Ver mas &rarr;</span>
+    </button>
+
+    <div
+      class="description-content hidden mt-4 text-gray-700 text-sm leading-relaxed border-t pt-4"
+    >
+      {post.description}
+    </div>
   </div>
 </article>
+
+<script>
+  // Runs once to attach listeners sequentially
+  const buttons = document.querySelectorAll(".description-toggle");
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const content = button.nextElementSibling;
+      const textSpan = button.querySelector(".toggle-text");
+
+      content.classList.toggle("hidden");
+
+      if (content.classList.contains("hidden")) {
+        textSpan.innerHTML = "Ver mas &rarr;";
+      } else {
+        textSpan.innerHTML = "Ver menos &uarr;";
+      }
+    });
+  });
+</script>

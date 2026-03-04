@@ -2,6 +2,7 @@ export const blogPosts = [
   {
     id: 1,
     title: "Prostodoncia",
+    subtitle: "Restauracion de piezas",
     description:
       "En prostodoncia restauramos piezas dañadas o perdidas para que vuelvas a comer, hablar y sonreír con total seguridad. Tu sonrisa puede volver a ser completa… y natural.",
     image: "/webenzo/img/prostodoncia.jpeg",
@@ -17,6 +18,7 @@ export const blogPosts = [
   {
     id: 2,
     title: "Ortodoncia",
+    subtitle: "Alineacion dental",
     description:
       "Alineamos tu sonrisa para mejorar no solo tu estética, sino también tu salud bucal. Trabajamos con técnicas modernas y cómodas para lograr resultados visibles y duraderos.",
     image: "/webenzo/img/ortodoncia.jpeg",
@@ -32,6 +34,7 @@ export const blogPosts = [
   {
     id: 3,
     title: "Implantes",
+    subtitle: "Piezas perdidas",
     description:
       "Recuperá las piezas perdidas con implantes dentales seguros y duraderos. Volvé a masticar con firmeza y sonreír sin preocupaciones.",
     image: "https://images.unsplash.com/photo-1609918438269-9a4c5f8fe3a4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -47,6 +50,7 @@ export const blogPosts = [
   {
     id: 4,
     title: "Odontopediatria",
+    subtitle: "Sonrisas infantiles",
     description:
       "Cuidamos la sonrisa de los más pequeños con paciencia, calidez y profesionalismo. Generamos experiencias positivas para que los niños crezcan sin miedo al odontologo.",
     image: "https://plus.unsplash.com/premium_photo-1674368232044-31d75efc09fa?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -61,6 +65,7 @@ export const blogPosts = [
   {
     id: 5,
     title: "Armonizacion orofacial",
+    subtitle: "Belleza facial",
     description:
       "La armonización orofacial es una especialidad que busca equilibrar y realzar la belleza del rostro respetando la anatomía, proporciones y expresión natural de cada paciente. A través de procedimientos mínimamente invasivos, trabajamos sobre labios, mentón, pómulos, perfil mandibular y tercio inferior facial para lograr resultados sutiles, armónicos y personalizados.",
     image: "/webenzo/img/armonizacionfacial.jpg",
@@ -76,6 +81,7 @@ export const blogPosts = [
   {
     id: 6,
     title: "Endodoncia",
+    subtitle: "Tratamiento de conductos",
     description:
       "Especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
     image: "/webenzo/img/endodoncia.jpeg",
@@ -91,6 +97,7 @@ export const blogPosts = [
   {
     id: 7,
     title: "Periodoncia",
+    subtitle: "Cuidado de encías",
     description:
       "La periodoncia se encarga de prevenir, diagnosticar y tratar enfermedades de las encías y del hueso que sostiene los dientes.",
     image: "/webenzo/img/periodoncia.jpeg",
@@ -106,6 +113,7 @@ export const blogPosts = [
   {
     id: 8,
     title: "Cirugia",
+    subtitle: "Procedimientos quirúrgicos",
     description:
       "Se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
     image: "/webenzo/img/cirugia.jpeg",
@@ -120,6 +128,7 @@ export const blogPosts = [
   {
     id: 9,
     title: "ATM",
+    subtitle: "Articulación Temporomandibular",
     description:
       "Realizamos un diagnóstico preciso y tratamientos personalizados para aliviar el dolor, mejorar la función y devolverte calidad de vida.",
     image: "/webenzo/img/atm.jpg",
