@@ -4,11 +4,20 @@ import frenteImgRaw from "../../assets/img/frente.JPG";
 import recepcionImgRaw from "../../assets/img/recepcion.JPG";
 import consultorioImgRaw from "../../assets/img/consultorio.JPG";
 
-const frenteImg = await getImage({ src: frenteImgRaw, format: "webp" });
-const recepcionImg = await getImage({ src: recepcionImgRaw, format: "webp" });
+const frenteImg = await getImage({
+  src: frenteImgRaw,
+  format: "webp",
+  width: 1920,
+});
+const recepcionImg = await getImage({
+  src: recepcionImgRaw,
+  format: "webp",
+  width: 1920,
+});
 const consultorioImg = await getImage({
   src: consultorioImgRaw,
   format: "webp",
+  width: 1920,
 });
 ---
 
@@ -22,6 +31,7 @@ const consultorioImg = await getImage({
       alt="Innova Dental Studio Frente"
       fetchpriority="high"
       loading="eager"
+      decoding="async"
       class="carousel-image absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 opacity-100"
       data-index="0"
     />
@@ -29,6 +39,7 @@ const consultorioImg = await getImage({
       src={recepcionImg.src}
       alt="Recepción"
       loading="lazy"
+      decoding="async"
       class="carousel-image absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 opacity-0"
       data-index="1"
     />
@@ -36,6 +47,7 @@ const consultorioImg = await getImage({
       src={consultorioImg.src}
       alt="Consultorio"
       loading="lazy"
+      decoding="async"
       class="carousel-image absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 opacity-0"
       data-index="2"
     />
