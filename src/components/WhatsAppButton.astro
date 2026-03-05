@@ -1,6 +1,7 @@
 ---
-const phone = "+5492216720937"; // Tu número
-const message = "Hola!%20Quiero%20más%20información.";
+const phone = "+5491172399020"; // Tu número
+const message =
+  "Hola!%20Queria%20un%20turno%20para%20consulta%20inicial%20por%20favor.";
 ---
 
 <a
@@ -26,7 +27,7 @@ const message = "Hola!%20Quiero%20más%20información.";
   <span
     class="whatsapp-text absolute right-16 bg-white text-gray-800 px-3 py-1 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap text-sm font-semibold pointer-events-none"
   >
-    ¡Chatea con nosotros!
+    ¡Contactate con nosotros!
   </span>
 </a>
 
@@ -35,8 +36,8 @@ const message = "Hola!%20Quiero%20más%20información.";
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 30px;
-    right: 30px;
+    bottom: 16px;
+    right: 16px;
     background-color: #25d366;
     color: #fff;
     border-radius: 50px;
@@ -48,6 +49,13 @@ const message = "Hola!%20Quiero%20más%20información.";
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
+  }
+
+  @media (min-width: 768px) {
+    .whatsapp-float {
+      bottom: 30px;
+      right: 30px;
+    }
   }
 
   .whatsapp-float:hover {
@@ -63,5 +71,15 @@ const message = "Hola!%20Quiero%20más%20información.";
   .whatsapp-icon {
     width: 100%;
     height: 100%;
+  }
+
+  .whatsapp-text {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .whatsapp-text {
+      display: block;
+    }
   }
 </style>

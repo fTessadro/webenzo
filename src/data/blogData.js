@@ -1,3 +1,11 @@
+import prostodonciaImg from '../assets/img/prostodoncia.jpeg';
+import ortodonciaImg from '../assets/img/ortodoncia.jpeg';
+import armonizacionfacialImg from '../assets/img/armonizacionfacial.jpg';
+import endodonciaImg from '../assets/img/endodoncia.jpeg';
+import periodonciaImg from '../assets/img/periodoncia.jpeg';
+import cirugiaImg from '../assets/img/cirugia.jpeg';
+import atmImg from '../assets/img/atm.jpg';
+
 export const blogPosts = [
   {
     id: 1,
@@ -5,7 +13,7 @@ export const blogPosts = [
     subtitle: "Restauracion de piezas",
     description:
       "En prostodoncia restauramos piezas dañadas o perdidas para que vuelvas a comer, hablar y sonreír con total seguridad. Tu sonrisa puede volver a ser completa… y natural.",
-    image: "/webenzo/img/prostodoncia.jpeg",
+    image: prostodonciaImg,
     slug: "importance-of-health-coverage",
     date: "Oct 23, 2025",
     author: "SaludPlus Team",
@@ -21,7 +29,7 @@ export const blogPosts = [
     subtitle: "Alineacion dental",
     description:
       "Alineamos tu sonrisa para mejorar no solo tu estética, sino también tu salud bucal. Trabajamos con técnicas modernas y cómodas para lograr resultados visibles y duraderos.",
-    image: "/webenzo/img/ortodoncia.jpeg",
+    image: ortodonciaImg,
     slug: "annual-checkups",
     date: "Oct 10, 2025",
     author: "Dr. Laura Fernández",
@@ -68,7 +76,7 @@ export const blogPosts = [
     subtitle: "Belleza facial",
     description:
       "La armonización orofacial es una especialidad que busca equilibrar y realzar la belleza del rostro respetando la anatomía, proporciones y expresión natural de cada paciente. A través de procedimientos mínimamente invasivos, trabajamos sobre labios, mentón, pómulos, perfil mandibular y tercio inferior facial para lograr resultados sutiles, armónicos y personalizados.",
-    image: "/webenzo/img/armonizacionfacial.jpg",
+    image: armonizacionfacialImg,
     slug: "prevention-programs",
     date: "Sep 25, 2025",
     author: "SaludPlus Team",
@@ -84,7 +92,7 @@ export const blogPosts = [
     subtitle: "Tratamiento de conductos",
     description:
       "Especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
-    image: "/webenzo/img/endodoncia.jpeg",
+    image: endodonciaImg,
     slug: "telemedicine",
     date: "Sep 20, 2025",
     author: "Dr. Natalia Gómez",
@@ -100,7 +108,7 @@ export const blogPosts = [
     subtitle: "Cuidado de encías",
     description:
       "La periodoncia se encarga de prevenir, diagnosticar y tratar enfermedades de las encías y del hueso que sostiene los dientes.",
-    image: "/webenzo/img/periodoncia.jpeg",
+    image: periodonciaImg,
     slug: "healthy-eating",
     date: "Sep 15, 2025",
     author: "Lic. Sofía Benítez",
@@ -116,7 +124,7 @@ export const blogPosts = [
     subtitle: "Procedimientos quirúrgicos",
     description:
       "Se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
-    image: "/webenzo/img/cirugia.jpeg",
+    image: cirugiaImg,
     slug: "personalized-care",
     date: "Sep 10, 2025",
     author: "SaludPlus Team",
@@ -131,7 +139,7 @@ export const blogPosts = [
     subtitle: "Articulación Temporomandibular",
     description:
       "Realizamos un diagnóstico preciso y tratamientos personalizados para aliviar el dolor, mejorar la función y devolverte calidad de vida.",
-    image: "/webenzo/img/atm.jpg",
+    image: atmImg,
     slug: "physical-activity",
     date: "Sep 5, 2025",
     author: "Dr. Ricardo Álvarez",
@@ -141,3 +149,4 @@ export const blogPosts = [
     `
   },
 ];
+

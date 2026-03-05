@@ -19,7 +19,9 @@ const year = new Date().getFullYear();
     </a>
 
     <!-- Enlaces Rápidos -->
-    <div class="flex space-x-6 mb-4 md:mb-0">
+    <div
+      class="flex flex-col md:flex-row items-center md:items-start space-y-3 md:space-y-0 md:space-x-6 mb-4 md:mb-0"
+    >
       <a
         href={`${import.meta.env.BASE_URL}#inicio`}
         class="hover:text-green-300 font-bold transition">Inicio</a
@@ -43,7 +45,7 @@ const year = new Date().getFullYear();
       <div class="flex gap-4 justify-center md:justify-start cursor-pointer">
         <!-- Ig -->
         <a
-          href="#"
+          href="https://www.instagram.com/innova_dentalstudio/"
           class="text-white hover:text-gray-300 transition"
           target="_blank"
           rel="noopener noreferrer"
@@ -62,7 +64,10 @@ const year = new Date().getFullYear();
         </a>
 
         <!-- Facebook -->
-        <a href="#" class="text-white hover:text-gray-300 transition">
+        <a
+          href="https://www.facebook.com/profile.php?id=61581163645433"
+          class="text-white hover:text-gray-300 transition"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

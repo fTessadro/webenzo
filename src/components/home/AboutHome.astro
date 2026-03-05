@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import homeImg from "../../assets/img/abouthome.jpg";
 ---
 
@@ -7,8 +8,8 @@ import homeImg from "../../assets/img/abouthome.jpg";
 >
   <!-- Left Image -->
   <div class="bg-[#F0F0F0] w-full md:w-1/2">
-    <img
-      src={homeImg.src}
+    <Image
+      src={homeImg}
       alt="Care and health for everyone"
       class="w-full h-[300px] md:h-[350px] object-cover rounded-xl shadow-md"
     />
@@ -25,10 +26,10 @@ import homeImg from "../../assets/img/abouthome.jpg";
     </h2>
 
     <p class="text-gray-600 text-base md:text-lg leading-7 mb-6">
-      At <span class="font-bold text-green-800">Innova</span>, we work so
-      that you and your family receive the best medical care, with affordable
-      plans and coverage across the country. Our mission is to provide security
-      and support at every stage of your life.
+      At <span class="font-bold text-green-800">Innova</span>, we work so that
+      you and your family receive the best medical care, with affordable plans
+      and coverage across the country. Our mission is to provide security and
+      support at every stage of your life.
       <br /><br />
       Because your health is the most important, we offer close, humane, and transparent
       care, tailored to your real needs.

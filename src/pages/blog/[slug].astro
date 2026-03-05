@@ -2,6 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import { blogPosts } from "../../data/blogData.js";
 import Breadcrumbs from "../../components/blog/Breadcrumbs.astro";
+import { Image } from "astro:assets";
 
 export async function getStaticPaths() {
   return blogPosts.map((post) => ({
@@ -26,11 +27,21 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
       ]}
     />
 
-    <img
-      src={post.image}
-      alt={post.title}
-      class="w-full h-96 object-cover rounded-2xl shadow mb-8"
-    />
+    {
+      typeof post.image === "string" ? (
+        <img
+          src={post.image}
+          alt={post.title}
+          class="w-full h-96 object-cover rounded-2xl shadow mb-8"
+        />
+      ) : (
+        <Image
+          src={post.image}
+          alt={post.title}
+          class="w-full h-96 object-cover rounded-2xl shadow mb-8"
+        />
+      )
+    }
 
     <h1 class="text-3xl md:text-4xl font-bold text-[#2F855A] mb-4">
       {post.title}
@@ -64,11 +75,19 @@ const relatedPosts = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 2);
             {relatedPosts.map((p) => (
               <article class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition">
                 <a href={`/blog/${p.slug}`} class="block">
-                  <img
-                    src={p.image}
-                    alt={p.title}
-                    class="w-full h-48 object-cover"
-                  />
+                  {typeof p.image === "string" ? (
+                    <img
+                      src={p.image}
+                      alt={p.title}
+                      class="w-full h-48 object-cover"
+                    />
+                  ) : (
+                    <Image
+                      src={p.image}
+                      alt={p.title}
+                      class="w-full h-48 object-cover"
+                    />
+                  )}
                 </a>
                 <div class="p-4 flex flex-col justify-between h-full">
                   <h3 class="text-lg font-bold text-[#2F855A] mb-2">

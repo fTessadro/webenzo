@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 const { employee } = Astro.props;
 ---
 
@@ -6,11 +7,21 @@ const { employee } = Astro.props;
     class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition duration-300 hover:-translate-y-2 flex flex-col h-full"
 >
     <div class="h-64 overflow-hidden">
-        <img
-            src={employee.image}
-            alt={employee.name}
-            class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
-        />
+        {
+            typeof employee.image === "string" ? (
+                <img
+                    src={employee.image}
+                    alt={employee.name}
+                    class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
+                />
+            ) : (
+                <Image
+                    src={employee.image}
+                    alt={employee.name}
+                    class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-105"
+                />
+            )
+        }
     </div>
 
     <div class="p-5 flex flex-col flex-grow">
