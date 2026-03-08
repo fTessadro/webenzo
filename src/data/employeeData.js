@@ -7,7 +7,7 @@ export const employees = [
   {
     id: 1,
     name: "Od. Enzo Tomas Salvatori",
-    role: "Prostoncista/ implantólogo/ Endodoncista",
+    role: "Prostodoncista/ Implantólogo/ Endodoncista",
     description: "",
     image: enzoinImg,
   },
@@ -21,14 +21,14 @@ export const employees = [
   {
     id: 3,
     name: "Od. Bacre Jerkovich Franco",
-    role: "Odontología general/implantólogo",
+    role: "Odontología general/Implantólogo",
     description: "",
     image: francoinImg,
   },
   {
     id: 4,
     name: "Od Ressel Lucrecia",
-    role: "Odontología general / Estética y armonización orofacial / odontopediatría",
+    role: "Odontología general / Estética y armonización orofacial / Odontopediatría",
     description: "Dedicada al cuidado de la salud bucal de los más pequeños.",
     image: lucreciainImg,
   },
