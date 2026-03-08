@@ -10,7 +10,7 @@ export const blogPosts = [
   {
     id: 1,
     title: "Prostodoncia",
-    subtitle: "Restauracion de piezas",
+    subtitle: "Restauración de piezas",
     description:
       "En prostodoncia restauramos piezas dañadas o perdidas para que vuelvas a comer, hablar y sonreír con total seguridad. Tu sonrisa puede volver a ser completa… y natural.",
     image: prostodonciaImg,
@@ -26,7 +26,7 @@ export const blogPosts = [
   {
     id: 2,
     title: "Ortodoncia",
-    subtitle: "Alineacion dental",
+    subtitle: "Alineación dental",
     description:
       "Alineamos tu sonrisa para mejorar no solo tu estética, sino también tu salud bucal. Trabajamos con técnicas modernas y cómodas para lograr resultados visibles y duraderos.",
     image: ortodonciaImg,
@@ -57,7 +57,7 @@ export const blogPosts = [
   },
   {
     id: 4,
-    title: "Odontopediatria",
+    title: "Odontopediatría",
     subtitle: "Sonrisas infantiles",
     description:
       "Cuidamos la sonrisa de los más pequeños con paciencia, calidez y profesionalismo. Generamos experiencias positivas para que los niños crezcan sin miedo al odontologo.",
@@ -72,7 +72,7 @@ export const blogPosts = [
   },
   {
     id: 5,
-    title: "Armonizacion orofacial",
+    title: "Armonización orofacial",
     subtitle: "Belleza facial",
     description:
       "La armonización orofacial es una especialidad que busca equilibrar y realzar la belleza del rostro respetando la anatomía, proporciones y expresión natural de cada paciente. A través de procedimientos mínimamente invasivos, trabajamos sobre labios, mentón, pómulos, perfil mandibular y tercio inferior facial para lograr resultados sutiles, armónicos y personalizados.",
@@ -91,7 +91,7 @@ export const blogPosts = [
     title: "Endodoncia",
     subtitle: "Tratamiento de conductos",
     description:
-      "Especialidad de odontologia que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
+      "Especialidad de odontología que se encarga de tratar las afecciones de la pulpa dental y los conductos radiculares, comúnmente llamado nervio, eliminado la infección y conservando el diente mediante el tratamiento de conducto.",
     image: endodonciaImg,
     slug: "telemedicine",
     date: "Sep 20, 2025",
@@ -120,7 +120,7 @@ export const blogPosts = [
   },
   {
     id: 8,
-    title: "Cirugia",
+    title: "Cirugía",
     subtitle: "Procedimientos quirúrgicos",
     description:
       "Se encarga de realizar procedimientos quirúrgicos en los maxilares como extracciones simples y complejas, cirugías de terceros molares o muelas de juicio, implantes dentales, tratamiento de lesiones como quistes, entre otras",
