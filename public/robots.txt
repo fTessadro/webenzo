@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.innovadentalstudio.com.ar/sitemap-index.xml
