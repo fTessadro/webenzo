@@ -25,6 +25,22 @@ import Footer from "../components/common/footer.astro";
 		<!-- <meta name="author" content="Innova Dental Studio" />
 		<meta name="theme-color" content="#000000" />
 		<meta name="robots" content="index, follow" /> -->
+
+		<!-- Google Analytics (GA4) -->
+		<!-- CAMBIAR AQUÍ: Reemplaza "G-XXXXXXXXXX" por tu ID de medición -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-CSY95D31JZ"
+		></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-CSY95D31JZ");
+		</script>
 	</head>
 	<body>
 		<div class="bg-[#F0F0F0]">
